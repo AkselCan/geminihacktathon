@@ -1,7 +1,7 @@
 document.getElementById('summarizeBtn').addEventListener('click', function() {
     var videoUrl = document.getElementById('videoUrl').value;
     if (videoUrl) {
-        // Make sure the Flask server URL is correct and the server is running
+        document.getElementById('summarizeBtn').innerText = 'Summarizing...';
         fetch('http://localhost:5000/summarize', {
             method: 'POST',
             headers: {
@@ -11,10 +11,12 @@ document.getElementById('summarizeBtn').addEventListener('click', function() {
         })
         .then(response => response.json())
         .then(data => {
+            document.getElementById('summarizeBtn').innerText = 'Summarize';
             document.getElementById('result').innerText = data.summary;
         })
         .catch(error => {
             console.error('Error:', error);
+            document.getElementById('summarizeBtn').innerText = 'Summarize';
         });
     }
 });
