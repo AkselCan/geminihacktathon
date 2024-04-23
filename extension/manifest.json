@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Video Summarizer",
+    "version": "1.0",
+    "description": "Summarize YouTube videos using AI.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "*://*/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/YouTube Summarizer.png",
+        "48": "images/YouTube Summarizer.png",
+        "128": "images/YouTube Summarizer.png"
+      }
+    },
+    "icons": {
+      "16": "images/YouTube Summarizer.png",
+      "48": "images/YouTube Summarizer.png",
+      "128": "images/YouTube Summarizer.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
