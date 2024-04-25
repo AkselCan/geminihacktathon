@@ -14,7 +14,7 @@ document.getElementById('summarizeBtn').addEventListener('click', function() {
             document.getElementById('summarizeBtn').innerText = 'Summarize';
             const resultElement = document.getElementById('result');
             resultElement.innerText = data.summary;
-            resultElement.style.display = 'block'; // To make sure it's visible if previously hidden
+            resultElement.style.display = 'block'; 
         })
         .catch(error => {
             console.error('Error:', error);
