@@ -6,20 +6,64 @@
     <title>Gemini Video Summarizer</title>
     <style>
         body { 
-            font-family: Helvetica, sans-serif; 
-            padding: 10px; 
-            background-color: #333; 
-            color: #fff; 
+            font-family: Verdana, sans-serif; 
+            padding: 100px; 
+            margin: 0;
+            color: #fff;
+            text-align: center; /* Centers all content */
+            background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Gradient background */
+            box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
         }
-        #result { margin-top: 10px; }
-        input, button {
-            border-radius: 10px;
+        #icon {
+            margin-top: 10px;
+            width: 60px;
+        }
+        #videoUrl {
+            font-family: Verdana, sans-serif;
+            margin: 10px auto;
+            display: block; 
+            width: 95%; 
+            max-width: 600px; 
+            padding: 12px; 
+            border-radius: 32px;
+            font-size: 13px; 
+            box-sizing: border-box; 
+        }
+        #summarizeBtn {
+            font-family: Verdana, sans-serif;
+            margin: 10px auto;
+            display: block; 
+            width: 95%; 
+            max-width: 600px; 
+            padding: 12px; 
+            border-radius: 32px;
+            font-size: 18px; 
+            box-sizing: border-box; 
+        }
+        #summarizeBtn {
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        #result {
+            padding: 20px;
+            width: 80px;
+            font-family: Verdana, sans-serif;
+            margin-top: 15px;
+            border-radius: 12px; /* Rounded corners for the result box */
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+            color: #fff; /* White text color */
+            text-align: center; /* Align text to the left */
+            max-height: 150px; /* Set a max height */
+            overflow-y: auto; /* Enable scroll if content is too long */
+            box-sizing: border-box;
+            display: none; /* Start with result hidden */
         }
     </style>
 </head>
 <body>
     <h1>Gemini Video Summarizer</h1>
-    <input type="text" id="videoUrl" placeholder="Enter YouTube Video URL">
+    <img id="icon" src="images/YouTube Summarizer.png" alt="Gemini Icon"> 
+    <input type="text" id="videoUrl" placeholder="Enter YouTube URL">
     <button id="summarizeBtn">Summarize</button>
     <div id="result"></div>
 

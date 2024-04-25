@@ -12,7 +12,9 @@ document.getElementById('summarizeBtn').addEventListener('click', function() {
         .then(response => response.json())
         .then(data => {
             document.getElementById('summarizeBtn').innerText = 'Summarize';
-            document.getElementById('result').innerText = data.summary;
+            const resultElement = document.getElementById('result');
+            resultElement.innerText = data.summary;
+            resultElement.style.display = 'block'; // To make sure it's visible if previously hidden
         })
         .catch(error => {
             console.error('Error:', error);

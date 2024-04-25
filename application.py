@@ -12,9 +12,10 @@ from dotenv import load_dotenv
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-prompt = """You are Yotube video summarizer. You will be taking the transcript text
+prompt = """You are a YouTube video summarizer. You will be taking the transcript text
 and summarizing the entire video and providing the important summary in points
-within 250 words. Please provide the summary of the text given here:  """
+within 250 words. You will also compare the title and transcript provided and give a score from 0 to 5 telling the clickbait level of the video.
+Please provide the summary of the text given here:  """
 
 def extract_transcript_details(video_id):
     transcript_text = YouTubeTranscriptApi.get_transcript(video_id)
