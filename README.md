@@ -2,16 +2,17 @@
 Don't let your food get cold while trying to find the perfect video! 
 Gemini Video Summarizer Chrome Extension is here to summarize your video and ensure it is not a clickbait!
 
+## Inspiration
+Approximately 3.7 million videos are uploaded to YouTube, and users spend an average of 20 minutes every single day. When attention is a commodity, users want to make sure that those 20 minutes are spent watching quality videos that are worth their time. This is where Gemini's high capabilities of summarizing long textual inputs come in. Users being able to pick videos that are worth their time is a step forward in improving user satisfaction. 
+
 ## How to use
-- Try to eat all the dots. 
-- Avoid the ghosts.
-- If you eat the power cookie(at corners), you can eat ghosts for a while.
+-
+-
+-
 
 ## GIF Walkthrough
 ![Gemini](https://github.com/AkselCan/geminihacktathon/assets/89808958/d5f98d40-5016-4121-a329-d17145b55b33)
 
-## Inspiration
-Approximately 3.7 million videos are uploaded to YouTube, and users spend an average of 20 minutes every single day. When attention is a commodity, users want to make sure that those 20 minutes are spent watching quality videos that are worth their time. This is where Gemini's high capabilities of summarizing long textual inputs come in. Users being able to pick videos that are worth their time is a step forward in improving user satisfaction. 
 
 ## What it does
 **The Gemini Video Summarizer** Chrome extension takes the user's input YouTube URL, pulls the video transcript from `YouTubeTranscriptAPI`, feeds it into `Gemini` to provide a summary within 250 words, and checks its **clickbait score**.
