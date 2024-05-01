@@ -5,11 +5,6 @@ Gemini Video Summarizer Chrome Extension is here to summarize your video and ens
 ## Inspiration
 Approximately 3.7 million videos are uploaded to YouTube, and users spend an average of 20 minutes every single day. When attention is a commodity, users want to make sure that those 20 minutes are spent watching quality videos that are worth their time. This is where Gemini's high capabilities of summarizing long textual inputs come in. Users being able to pick videos that are worth their time is a step forward in improving user satisfaction. 
 
-## How to use
--
--
--
-
 ## GIF Walkthrough
 ![Gemini](https://github.com/AkselCan/geminihacktathon/assets/89808958/d5f98d40-5016-4121-a329-d17145b55b33)
 
