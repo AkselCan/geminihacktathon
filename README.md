@@ -11,7 +11,7 @@ Gemini Video Summarizer Chrome Extension is here to summarize your video and ens
 ![PacmanWalk](https://github.com/espennoreng/haskell-pacman/assets/89808958/7b163ac6-6c20-494e-9966-15a4513171b8)
 
 ## Inspiration
-I was inspired by Gemini's capabilities of summarizing long textual inputs and wanted to utilize where all the "IPad Kids" will benefit from it.
+Approximately 3.7 million videos are uploaded to YouTube, and users spend an average of 20 minutes every single day. When attention is a commodity, users want to make sure that those 20 minutes are spent watching quality videos that are worth their time. This is where Gemini's high capabilities of summarizing long textual inputs come in. Users being able to pick videos that are worth their time is a step forward in improving user satisfaction. 
 
 ## What it does
 **The Gemini Video Summarizer** Chrome extension takes the user's input YouTube URL, pulls the video transcript from `YouTubeTranscriptAPI`, feeds it into `Gemini` to provide a summary within 250 words, and checks its **clickbait score**.
