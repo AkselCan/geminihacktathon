@@ -1,5 +1,6 @@
 # Gemini Video Summarizer
-/ enter description here /
+Don't let your food get cold while trying to find the perfect video! 
+Gemini Video Summarizer Chrome Extension is here to summarize your video and ensure it is not a clickbait!
 
 ---
 
